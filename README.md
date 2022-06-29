@@ -17,9 +17,12 @@ If you want upgrade this project, clone all files, and send updated files to dis
 ```
 main.sakura - SakuraSkript code
 
+
 compiler.cpp - compiler, based on C++
 
-compiled.cpp(auto-creating) - compiled code ( main.sakura -> compiler.cpp ==> compiled.cpp + sakuraSkript.hpp )
+
+compiled.cpp(auto-creating) - compiled code ( main.sakura -> compiler.cpp ==> compiled.cpp )
+
 
 sakuraSkript.hpp - custom commands for sakuraSkript
 ```
