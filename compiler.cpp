@@ -148,55 +148,6 @@ int main()
                 }
                 endString = true;
             }
-            if (word == "if : ")
-            {
-                compiled << "    if ";
-                while(code.get(symbol) && endString)
-                {
-                    if (symbol == ')')
-                    {
-                        compiled << ")" << endl;
-                        word = "";
-                        compiled << "    {" << endl;
-                        while(code.get(symbol) && endString)
-                        {
-                            if (symbol != '\n')
-                            {
-                                if (symbol != ' ')
-                                {
-                                    word += symbol;
-                                }
-                            }
-                            if (word == "print:")
-                            {
-                                compiled << "        cout <<";
-                                while(code.get(symbol) && endString)
-                                {
-                                    if (symbol == ';')
-                                    {
-                                        word = "";
-                                        compiled << " << endl;";
-                                        compiled << "" << endl;
-                                        endString = false;
-                                    }
-                                    else
-                                    {
-                                        compiled << symbol;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        compiled << symbol;
-                    }
-                }
-                compiled << "    }" << endl;
-                word = "";
-                symbol = ' ';
-                endString = true;
-            }
         }
         compiled << "\n    return 0;" << endl;
         compiled << "}" << endl;
