@@ -1,6 +1,7 @@
 # SakuraSkript
 ```
- SakuraSkript - open source project, based on C++, SakuraSkript NOT programing language, SakuraSkript - experiment
+ SakuraSkript - open source project, based on C++,
+ SakuraSkript NOT programing language, SakuraSkript - experiment
 ```
 
 
