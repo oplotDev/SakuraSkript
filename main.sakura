@@ -4,8 +4,9 @@ double : c = 0.11;
 string : d = "Hello, world!";
 char : f = '|';
 
-string inputTest = input();
+string : inputTest = input();
 
 printnl : d;
+wait : 5000;
 system : clear;
 print : d + f;

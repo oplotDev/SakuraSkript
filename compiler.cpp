@@ -190,6 +190,24 @@ int main()
                 }
                 endString = true;
             }
+            if (word == "wait : ")
+            {
+                compiled << "    Sleep(";
+                while(code.get(symbol) && endString)
+                {
+                    if (symbol == ';')
+                    {
+                        word = "";
+                        compiled << ");" << endl;
+                        endString = false;
+                    }
+                    else
+                    {
+                        compiled << symbol;
+                    }
+                }
+                endString = true;
+            }
         }
         compiled << "\n    return 0;" << endl;
         compiled << "}" << endl;

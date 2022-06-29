@@ -10,10 +10,11 @@ int main()
     string d = "Hello, world!";
     char f = '|';
 
+    string inputTest = input();
+
     cout << d << endl;
-
+    Sleep(5000);
     system("cls");
-
     cout << d + f;
 
     return 0;
