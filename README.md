@@ -29,4 +29,4 @@ sakuraSkript.hpp - custom commands for sakuraSkript
 
 
 
-**If you want test, install any C++ compiler, or use online compiler**
+**If you want test, install any C++ compiler, or use online compiler, and run compiler.cpp**
