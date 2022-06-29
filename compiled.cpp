@@ -11,6 +11,9 @@ int main()
     char f = '|';
 
     cout << d << endl;
+
+    system("cls");
+
     cout << d + f;
 
     return 0;

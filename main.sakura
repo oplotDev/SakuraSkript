@@ -5,4 +5,7 @@ string : d = "Hello, world!";
 char : f = '|';
 
 printnl : d;
+
+system : clear;
+
 print : d + f;

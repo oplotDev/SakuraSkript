@@ -167,6 +167,29 @@ int main()
                 }
                 endString = true;
             }
+            if (word == "system : ")
+            {
+                compiled << "    system(";
+                word = "";
+                while(code.get(symbol) && endString)
+                {
+                    if (symbol == ';')
+                    {
+                        word = "";
+                        compiled << ");" << endl;
+                        endString = false;
+                    }
+                    else
+                    {
+                        word += symbol;
+                        if (word == "clear")
+                        {
+                            compiled << "\"cls\"";
+                        }
+                    }
+                }
+                endString = true;
+            }
         }
         compiled << "\n    return 0;" << endl;
         compiled << "}" << endl;
