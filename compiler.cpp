@@ -34,7 +34,7 @@ int main()
             {
                 compiled << symbol;
             }
-            if (word == "print : ")
+            if (word == "printnl : ")
             {
                 compiled << "    cout << ";
                 while(code.get(symbol) && endString)
@@ -43,6 +43,25 @@ int main()
                     {
                         word = "";
                         compiled << " << endl;";
+                        compiled << "" << endl;
+                        endString = false;
+                    }
+                    else
+                    {
+                        compiled << symbol;
+                    }
+                }
+                endString = true;
+            }
+            if (word == "print : ")
+            {
+                compiled << "    cout << ";
+                while(code.get(symbol) && endString)
+                {
+                    if (symbol == ';')
+                    {
+                        word = "";
+                        compiled << ";";
                         compiled << "" << endl;
                         endString = false;
                     }

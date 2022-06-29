@@ -1,4 +1,8 @@
-string : x = input();
+int : a = 2;
+float : b = 3.14;
+double : c = 0.11;
+string : d = "Hello, world!";
+char : f = '|';
 
-if : (x == "Hello!")
-    print : "Hello! This is SakuraSkript!";
+printnl : d;
+print : d + f;

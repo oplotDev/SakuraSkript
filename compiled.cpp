@@ -4,12 +4,14 @@ using namespace std;
 
 int main()
 {
-    string x = input();
+    int a = 2;
+    float b = 3.14;
+    double c = 0.11;
+    string d = "Hello, world!";
+    char f = '|';
 
-    if (x == "Hello!")
-    {
-        cout << "Hello! This is SakuraSkript!" << endl;
-    }
+    cout << d << endl;
+    cout << d + f;
 
     return 0;
 }
