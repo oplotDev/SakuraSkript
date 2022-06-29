@@ -6,7 +6,7 @@ using namespace std;
 
 string input()
 {
-    string word = "";
+    string word;
     cin >> word;
     return word;
 }
