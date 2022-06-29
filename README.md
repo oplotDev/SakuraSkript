@@ -19,7 +19,9 @@ main.sakura - SakuraSkript code
 
 compiler.cpp - compiler, based on C++
 
-compiled.cpp(auto-creating) - compiled code ( main.sakura -> compiler.cpp ==> compiled.cpp )
+compiled.cpp(auto-creating) - compiled code ( main.sakura -> compiler.cpp ==> compiled.cpp + sakuraSkript.hpp )
+
+sakuraSkript.hpp - custom commands for sakuraSkript
 ```
 
 
